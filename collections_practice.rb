@@ -22,12 +22,7 @@ def swap_elements(array_of_elements)
 end
 
 def reverse_array(array_of_int)
-  reversed_arr = []
-  i = array_of_int.length - 1
-  while i > 0
-    reversed_arr << array_of_int[i]
-  end
-  reversed_arr
+  array_of_int.reverse 
 end
 
 def kesha_maker(array_of_str)
@@ -36,3 +31,22 @@ def kesha_maker(array_of_str)
   end
 end
 
+def find_a(array_of_str)
+  array_of_str.select do |str|
+    str.start_with?("a")
+  end
+end
+
+def sum_array(int)
+  int.inject { |sum, num| sum + num}
+end
+
+def add_s(words)
+  words.each_with_index.collect do |word, index|
+    if(index != 1)
+      "#{word}s"
+    else
+      "#{word}"
+    end
+  end
+end
