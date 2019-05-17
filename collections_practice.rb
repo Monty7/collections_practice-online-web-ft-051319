@@ -39,6 +39,11 @@ end
 
 def sum_array(int)
   int.inject { |sum, num| sum + num}
-
 end
 
+def add_s(words)
+  words.each_with_i.collect do |word|
+    
+  end
+end
+end
